@@ -1,0 +1,29 @@
+[formatter.nix]
+command = "nixfmt"
+options = ["--"]
+includes = ["*.nix"]
+
+[formatter.toml]
+command = "taplo"
+options = ["format", "--"]
+includes = ["*.toml"]
+
+[formatter.markdown]
+command = "prettier"
+options = ["--parser", "markdown", "--write", "--"]
+includes = ["*.md"]
+
+[formatter.html]
+command = "prettier"
+options = ["--parser", "html", "--write", "--"]
+includes = ["*.html"]
+
+[formatter.css]
+command = "prettier"
+options = ["--parser", "css", "--write", "--"]
+includes = ["*.css"]
+
+[formatter.svg]
+command = "prettier"
+options = ["--parser", "html", "--write", "--"]
+includes = ["*.svg"]
